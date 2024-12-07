@@ -1,0 +1,42 @@
+export const categories = [
+  {
+    id: 'running',
+    name: 'Running',
+    description: 'Built for speed and endurance',
+    image: 'https://images.unsplash.com/photo-1600185365926-3a2ce3cbb23d?w=600&q=80',
+    count: 48,
+    gradient: 'from-blue-600 to-cyan-400',
+  },
+  {
+    id: 'lifestyle',
+    name: 'Lifestyle',
+    description: 'Street-ready everyday style',
+    image: 'https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=600&q=80',
+    count: 62,
+    gradient: 'from-orange-500 to-pink-500',
+  },
+  {
+    id: 'basketball',
+    name: 'Basketball',
+    description: 'Dominate the court',
+    image: 'https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=600&q=80',
+    count: 31,
+    gradient: 'from-red-500 to-orange-400',
+  },
+  {
+    id: 'training',
+    name: 'Training',
+    description: 'Push your limits',
+    image: 'https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=600&q=80',
+    count: 27,
+    gradient: 'from-green-500 to-emerald-400',
+  },
+  {
+    id: 'formal',
+    name: 'Formal',
+    description: 'Dressed for success',
+    image: 'https://images.unsplash.com/photo-1449505278894-297fdb3edbc1?w=600&q=80',
+    count: 19,
+    gradient: 'from-slate-600 to-slate-400',
+  },
+];
