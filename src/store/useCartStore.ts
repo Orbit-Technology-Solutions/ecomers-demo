@@ -89,6 +89,6 @@ export const useCartStore = create<CartStore>()(
       getItemCount: () =>
         get().items.reduce((sum, i) => sum + i.quantity, 0),
     }),
-    { name: 'stride-cart' }
+    { name: 'ibex-cart' }
   )
 );

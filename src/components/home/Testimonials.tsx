@@ -8,7 +8,7 @@ const testimonials = [
     location: 'Addis Ababa',
     avatar: 'YT',
     rating: 5,
-    text: 'Absolutely love my Air Velocity Pros! They arrived next day, fit perfectly and are the most comfortable running shoes I\'ve ever owned. Stride is the only place I shop for shoes now.',
+    text: 'Absolutely love my Air Velocity Pros! They arrived next day, fit perfectly and are the most comfortable running shoes I\'ve ever owned. Ibex Shoes is the only place I shop for shoes now.',
     initials: 'bg-orange-500',
   },
   {

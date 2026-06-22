@@ -43,9 +43,9 @@ export default function WhyChooseUs() {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <p className="text-orange-500 text-sm font-semibold uppercase tracking-wider mb-2">Why Stride</p>
+          <p className="text-orange-500 text-sm font-semibold uppercase tracking-wider mb-2">Why Ibex</p>
           <h2 className="text-4xl lg:text-5xl font-black text-zinc-900 dark:text-white tracking-tight">
-            The Stride Promise
+            The Ibex Promise
           </h2>
         </motion.div>
 

@@ -26,6 +26,6 @@ export const useWishlistStore = create<WishlistStore>()(
 
       clear: () => set({ ids: [] }),
     }),
-    { name: 'stride-wishlist' }
+    { name: 'ibex-wishlist' }
   )
 );

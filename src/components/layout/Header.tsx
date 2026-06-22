@@ -1,6 +1,7 @@
 'use client';
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ShoppingBag, Heart, Search, Menu, X, Sun, Moon } from 'lucide-react';
@@ -49,18 +50,19 @@ export default function Header() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 lg:h-20">
             {/* Logo */}
-            <Link href="/" className="flex items-center gap-2">
-              <motion.span
-                className={`text-2xl font-black tracking-tighter transition-colors ${
-                  scrolled || !isHome
-                    ? 'text-zinc-900 dark:text-white'
-                    : 'text-white'
-                }`}
-                whileHover={{ scale: 1.02 }}
+            <Link href="/" className="flex items-center gap-2.5">
+              <motion.div
+                whileHover={{ scale: 1.04 }}
+                className="relative w-9 h-9 bg-white rounded-xl overflow-hidden shadow-sm flex-shrink-0"
               >
-                STRIDE
-              </motion.span>
-              <span className="w-1.5 h-1.5 rounded-full bg-orange-500 mt-0.5" />
+                <Image src="/logo.png" alt="Ibex Shoes" fill className="object-contain" />
+              </motion.div>
+              <div className="flex flex-col leading-none">
+                <span className={`text-base font-black tracking-tight transition-colors ${scrolled || !isHome ? 'text-zinc-900 dark:text-white' : 'text-white'}`}>
+                  IBEX
+                </span>
+                <span className="text-[9px] font-bold text-orange-500 tracking-[0.2em] uppercase">SHOES</span>
+              </div>
             </Link>
 
             {/* Desktop Nav */}

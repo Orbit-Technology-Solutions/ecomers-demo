@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { Globe, MessageSquare, Share2, Play } from 'lucide-react';
 
 export default function Footer() {
@@ -8,12 +9,17 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-zinc-800">
           {/* Brand */}
           <div>
-            <div className="flex items-center gap-2 mb-4">
-              <span className="text-2xl font-black text-white tracking-tighter">STRIDE</span>
-              <span className="w-1.5 h-1.5 rounded-full bg-orange-500" />
+            <div className="flex items-center gap-3 mb-4">
+              <div className="relative w-12 h-12 bg-white rounded-xl overflow-hidden flex-shrink-0">
+                <Image src="/logo.png" alt="Ibex Shoes" fill className="object-contain p-1" />
+              </div>
+              <div className="flex flex-col leading-none">
+                <span className="text-xl font-black text-white tracking-tight">IBEX</span>
+                <span className="text-[10px] font-bold text-orange-500 tracking-[0.2em] uppercase">SHOES</span>
+              </div>
             </div>
             <p className="text-sm leading-relaxed mb-6">
-              Premium footwear for every step of your journey. Crafted for performance, designed for life.
+              Premium footwear for every step of your journey. Ethiopian-made, world-class quality.
             </p>
             <div className="flex gap-3">
               {[Globe, MessageSquare, Share2, Play].map((Icon, i) => (
@@ -61,7 +67,7 @@ export default function Footer() {
                 <a href="tel:+251911000000" className="hover:text-white transition-colors">+251 911 000 000</a>
               </li>
               <li>
-                <a href="mailto:hello@stride.et" className="hover:text-white transition-colors">hello@stride.et</a>
+                <a href="mailto:hello@ibexshoes.et" className="hover:text-white transition-colors">hello@ibexshoes.et</a>
               </li>
               <li className="pt-2">
                 <span className="text-xs text-zinc-600">Mon–Sat: 9AM – 8PM</span>
@@ -72,7 +78,7 @@ export default function Footer() {
 
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-zinc-600">
-            © 2024 Stride. All rights reserved.
+            © 2025 Ibex Shoes. All rights reserved.
           </p>
           <div className="flex items-center gap-4 text-xs">
             <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>

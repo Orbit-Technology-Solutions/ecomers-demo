@@ -9,8 +9,8 @@ import CartDrawer from '@/components/layout/CartDrawer';
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 
 export const metadata: Metadata = {
-  title: 'Stride — Premium Footwear',
-  description: 'Premium footwear for every step. Shop running, lifestyle, basketball, training and formal shoes.',
+  title: 'Ibex Shoes — Premium Ethiopian Footwear',
+  description: 'Premium footwear for every step. Shop running, lifestyle, basketball, training and formal shoes. ETB pricing, Chapa & Telebirr payment.',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
