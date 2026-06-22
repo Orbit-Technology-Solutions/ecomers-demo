@@ -51,5 +51,5 @@ export interface CheckoutData {
   apartment: string;
   postalCode: string;
   shippingMethod: 'standard' | 'express';
-  paymentMethod: 'chapa' | 'telebirr' | 'cbe' | 'visa' | 'mastercard';
+  paymentMethod: 'chapa' | 'telebirr' | 'cbe' | 'visa' | 'mastercard' | 'bank-transfer';
 }

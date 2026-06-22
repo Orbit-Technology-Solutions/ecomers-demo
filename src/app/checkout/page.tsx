@@ -17,6 +17,7 @@ const PAYMENT_METHODS = [
   { id: 'chapa', name: 'Chapa', desc: 'Ethiopia\'s payment gateway', icon: '🟢', color: 'border-green-300 bg-green-50 dark:bg-green-500/10 dark:border-green-500/30' },
   { id: 'telebirr', name: 'Telebirr', desc: 'Ethio Telecom mobile money', icon: '📱', color: 'border-blue-300 bg-blue-50 dark:bg-blue-500/10 dark:border-blue-500/30' },
   { id: 'cbe', name: 'CBE Birr', desc: 'Commercial Bank of Ethiopia', icon: '🏦', color: 'border-orange-300 bg-orange-50 dark:bg-orange-500/10 dark:border-orange-500/30' },
+  { id: 'bank-transfer', name: 'Bank Transfer', desc: 'Transfer directly to our bank account', icon: '🏧', color: 'border-amber-300 bg-amber-50 dark:bg-amber-500/10 dark:border-amber-500/30' },
   { id: 'visa', name: 'Visa', desc: 'International credit card', icon: '💳', color: 'border-zinc-300 dark:border-zinc-600 bg-zinc-50 dark:bg-zinc-900' },
   { id: 'mastercard', name: 'Mastercard', desc: 'International credit card', icon: '💳', color: 'border-zinc-300 dark:border-zinc-600 bg-zinc-50 dark:bg-zinc-900' },
 ];
@@ -37,6 +38,8 @@ export default function CheckoutPage() {
     } else {
       if (data.paymentMethod === 'chapa') {
         router.push('/chapa');
+      } else if (data.paymentMethod === 'bank-transfer') {
+        router.push('/checkout/bank-transfer');
       } else {
         router.push('/checkout/success');
       }

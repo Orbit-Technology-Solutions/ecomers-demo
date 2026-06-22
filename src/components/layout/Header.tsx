@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ShoppingBag, Heart, Search, Menu, X, Sun, Moon } from 'lucide-react';
+import { ShoppingBag, Heart, User, Menu, X, Sun, Moon } from 'lucide-react';
 import { useTheme } from 'next-themes';
 import { useCartStore } from '@/store/useCartStore';
 import { useWishlistStore } from '@/store/useWishlistStore';
@@ -13,6 +13,7 @@ const navLinks = [
   { href: '/', label: 'Home' },
   { href: '/shop', label: 'Shop' },
   { href: '/orders', label: 'Orders' },
+  { href: '/profile', label: 'Profile' },
 ];
 
 export default function Header() {
@@ -103,6 +104,20 @@ export default function Header() {
                   {theme === 'dark' ? <Sun size={18} /> : <Moon size={18} />}
                 </motion.button>
               )}
+
+              {/* Profile */}
+              <Link href="/profile">
+                <motion.button
+                  className={`p-2.5 rounded-full transition-colors ${
+                    scrolled || !isHome
+                      ? 'text-zinc-600 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-zinc-800'
+                      : 'text-white/80 hover:bg-white/10'
+                  }`}
+                  whileTap={{ scale: 0.9 }}
+                >
+                  <User size={18} />
+                </motion.button>
+              </Link>
 
               {/* Wishlist */}
               <Link href="/wishlist">
