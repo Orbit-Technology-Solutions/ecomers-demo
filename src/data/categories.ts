@@ -27,7 +27,7 @@ export const categories = [
     id: 'lifestyle',
     name: "Women's",
     description: 'Heels, flats & pumps',
-    image: 'https://images.unsplash.com/photo-1614252235316-8c857196f400?w=600&q=80',
+    image: 'https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=600&q=80',
     count: 31,
     gradient: 'from-rose-600 to-pink-400',
   },
@@ -38,5 +38,13 @@ export const categories = [
     image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80',
     count: 17,
     gradient: 'from-slate-700 to-slate-500',
+  },
+  {
+    id: 'casual',
+    name: 'Casual Leather',
+    description: 'Sneakers, moccasins & everyday',
+    image: 'https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=600&q=80',
+    count: 22,
+    gradient: 'from-teal-700 to-teal-500',
   },
 ];
